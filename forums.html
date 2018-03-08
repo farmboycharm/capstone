@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Blog</title>
+  <meta charset="utf-8">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Rajdhani" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <!-- Import Java Scripts: main jquery, plugins and materialize -->
+  <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+  <script type="text/javascript" src="js/plugins.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <!-- Import Main CSS -->
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+  <!-- for button collapse feature -->
+  <script>
+    $(document).ready(function(){
+      $(".button-collapse").sideNav();
+      $('.modal').modal();
+    });
+  </script>
+      
+</head>
+
+<!-- body background -->
+<body class="indigo lighten-2">
+  <!-- preloader -->
+  <div id="loader-wrapper">
+      <div id="loader"></div>        
+      <div class="loader-section section-left black"></div>
+      <div class="loader-section section-right black"></div>
+  </div>
+  <!-- nav bar -->
+  <nav class="indigo darken-1 container-fluid">
+    <div class="nav-wrapper">
+       <div class="row">
+         <div class="col s12 m6 l4">
+           <ul class="left">
+             <li><a href="index.html"><img src="css/logo.png" class="hoverable img-responsive" id="logo"></a></li>
+           </ul>
+         </div>
+       
+         <div class="col s6 m6 l4">
+          <!-- empty div to keep structure -->
+         </div>
+         <!-- Nav Bar Icons  -->
+         <!-- button collapse menu link to mobile demo -->
+         <div class="col s12 m6 l4">
+           <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+           <ul class="right hide-on-med-and-down">
+             <li><a href="signin.html"><i class="material-icons">vpn_key</i></a></li>
+             <li><a href="create.html"><i class="material-icons">edit</i></a></li>
+             <li class="active waves-effect indigo lighten-2"><a href="forums.html"><i class="material-icons">content_paste</i></a></li>
+             <li><a href="aboutus.html"><i class="material-icons">help</i></a></li>
+           </ul>
+
+           <ul class="side-nav" id="mobile-demo">
+             <li><a href="signin.html">Sign In</a></li>
+             <li><a href="create.html">Create Account</a></li>
+             <li><a href="forums.html">Forums</a></li>
+             <li><a href="aboutus.html">About Us</a></li>
+           </ul>
+         </div>
+       </div>
+    </div>
+  </nav>
+  <br>
+  <!-- blog content -->
+  <main role="main" id="MainContent"> 
+    <div class="container">
+      <div class="row">
+        <div class="col s12 m6 l9 card-panel" id="page1">
+          
+          <article>
+          <h2>Pharmacy Boards Update</h2>
+          <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volun porttitor, facilisis luctus, metus</p><br><a href="#">Read more...</a>
+         </article>
+
+          <article>
+          <h2>Level Up your GAME</h2>
+          <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volun porttitor, facilisis luctus, metus</p><br><a href="#">Read more...</a>
+         </article>
+        </div>
+        <!-- side panel content -->
+        <div class="col s12 m3 l3 card-panel">
+          <div class="row">
+            <div class="col s12 m12 l12">
+              <h5 class="light">In Focus</h5>
+              <div class="card small">
+                <div class="card-image">
+                  <img class="materialboxed" src="css/nurseforum.jpg">
+                  <span class="card-title"></span>
+                </div>
+                <div class="card-content">
+                  <p>Biology Lecturer: Dr. Kim Chu Papa</p>
+                </div>
+                <div class="card-action">
+                  <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Profile</a>
+                  <div id="modal1" class="modal">
+                    <div class="modal-content">
+                      <h4>Dr. Kim Chu Papa</h4>
+                      <p>Lodi petmalu werpa orb repa wangbu wetpaks fishballs lomi kikiam squiballs.</p>
+                      <p></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- collapsible tabs structure -->
+            <div>
+              <ul class="collapsible" data-collapsible="expandable">
+                <li>
+                  <div class="collapsible-header"><i class="material-icons">filter_drama</i>Cloud Teach</div>
+                  <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                </li>
+                <li>
+                  <div class="collapsible-header"><i class="material-icons">place</i>Location Updates</div>
+                  <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                </li>
+                <li>
+                  <div class="collapsible-header"><i class="material-icons">whatshot</i>What's HOT?</div>
+                  <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                </li>
+               </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+       <!-- pagination visuals only -->
+      <ul class="pagination">
+        <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+        <li class="active"><a href="#page1">1</a></li>
+        <li class="waves-effect"><a href="forums2.html">2</a></li>
+        <li class="waves-effect"><a href="#!">3</a></li>
+        <li class="waves-effect"><a href="#!">4</a></li>
+        <li class="waves-effect"><a href="#!">5</a></li>
+        <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+      </ul>
+    </div>
+  </main>
+  
+  <!-- footer structure -->
+  <div class="footer-copyright indigo darken-3 white-text">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col s12 m4 l4"></div> <!-- empty div to keep structure -->
+        <div class="col s12 m4 l4">
+          <div class="social-login-buttons">
+            <br>
+            <a class="white-text" href="https://www.facebook.com/"><i class="fa fa-facebook fa-fw"></i>Facebook</a>
+            <a class="white-text" href="https://twitter.com/?lang=en"><i class="fa fa-twitter fa-fw"></i>Twitter</a>
+            <a class="white-text" href="https://www.instagram.com/?hl=en"><i class="fa fa-instagram fa-fw"></i>Instagram</a>
+          </div>
+        </div> 
+        <div class="col s12 m4 l4 right-align">
+          <br>
+          <p>© 2018 Copyright Joma Ronquillo</p></div>
+      </div>
+    </div>    
+  </div>
+
+</body>
+
+</html>

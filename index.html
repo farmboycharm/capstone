@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Index</title>
+  <meta charset="utf-8">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Rajdhani" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Import Main CSS -->
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <!-- Import Java Scripts: main jquery, plugins and materialize -->
+  <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+  <script type="text/javascript" src="js/plugins.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+
+  <!-- for carousel and button collapse feature -->
+  <script>
+    $(document).ready(function(){
+      $(".button-collapse").sideNav();
+      $('.carousel').carousel();
+    });
+  </script>  
+</head>
+
+<body>
+
+  <!-- preloader -->
+  <div id="loader-wrapper">
+    <div id="loader"></div>        
+    <div class="loader-section section-left black"></div>
+    <div class="loader-section section-right black"></div>
+  </div>
+
+  <!-- NAV BAR -->
+  <nav class="indigo darken-1 container-fluid">
+    <div class="nav-wrapper ">
+      <div class="row">
+        <div class="col s12 m4 l4">
+          <ul class="left">
+            <li><a href="index.html"><img src="css/logo.png" class=" hoverable img-responsive" id="logo"></a></li>
+          </ul>
+        </div>
+       <!-- Tap Target Message icon marker can be hidden-->
+        <div class="col s12 m4 l4">
+          <div class="">
+            <i id="menu" class="material-icons right"></i>
+          </div>
+        </div>
+        <!-- Nav Bar Icons  -->
+        <!-- button collapse menu link to mobile demo -->
+        <div class="col s12 m4 l4">
+          <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+             <li><a href="signin.html"><i class="material-icons">vpn_key</i></a></li>
+             <li><a href="create.html"><i class="material-icons">edit</i></a></li>
+             <li><a href="forums.html"><i class="material-icons">content_paste</i></a></li>
+             <li><a href="aboutus.html"><i class="material-icons">help</i></a></li>
+          </ul>
+
+          <ul class="side-nav" id="mobile-demo">
+            <li><a href="signin.html">Sign In</a></li>
+            <li><a href="create.html">Create Account</a></li>
+            <li><a href="forums.html">Forums</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  
+  <main> 
+  <!-- Flickity HTML init -->
+    <div class="row">
+    <div class="col s12 m12 l12" >
+    <div class="carousel" data-flickity='{ "freeScroll": false, "wrapAround": true, "autoPlay": 5000, "prevNextButtons": false }'>
+      <div class="hoverable"><img  src="css/cogcarousel.png" alt="" /></div>
+      <div class="hoverable"><img  src="css/licensed.png" alt="" /></div>
+      <div class="hoverable"><img  src="css/dentistcarousel.png" alt="" /></div>
+      <div class="hoverable"><img  src="css/syringecarousel.png" alt="" /></div>
+    </div>
+    </div>
+    </div>
+
+    
+    <!-- Floating ICONS -->
+    <div class="row">
+      <div class="hover08 hvr-float-shadow col s12 m6 l3 caption center align=" ><a href="signin.html"><img src="css/mdicon.png" class="zoom center-block responsive-img"></a><h5>Physician</h5></div>
+      <div class="hover08 hvr-float-shadow col s12 m6 l3 caption center align"><a href="pharma.html"><img src="css/pharmicon.png" class="zoom center-block"></a><h5>Pharmacist</h5></div>
+      <div class="hover08 hvr-float-shadow col s12 m6 l3 caption center align"><a href="signin.html"><img src="css/denticon.png" class="zoom center-block"></a><h5>Dentist</h5></div>
+      <div class="hover08 hvr-float-shadow col s12 m6 l3 caption center align"><a href="signin.html"><img src="css/nurseicon.png" class="zoom center-block"></a><h5>Nurse</h5></div>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <div class="footer-copyright indigo darken-3 white-text">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col s12 m4 l4">
+          <!-- empty div to keep structure content -->
+        </div>
+        <div class="col s12 m4 l4">
+          <br>
+          <center><a class= "waves-effect waves-light btn indigo lighten-1" onclick="$('.tap-target').tapTarget('open')"><i class="material-icons right">present_to_all</i>START</a></center>
+        </div>
+        <div class="col s12 m4 l4 right-align">
+          <br>
+          <p>© 2018 Copyright Joma Ronquillo</p>
+        </div>
+        <!-- Tap Target Structure -->
+        <div class="tap-target  indigo lighten-2 white-text" data-activates="menu">
+          <div class="tap-target-content">
+            <h5>Click on the ICON related to your course to get started</h5>
+          </div>
+        </div>
+      </div>
+    </div>    
+  </div>
+
+  <!-- import the carousel js and css plugin courtersy of flickcity yeah yeah -->
+  <script src="flickcity/flickity.pkgd.min.js"></script>
+  <link rel="stylesheet" href="flickcity/flickity.css" media="screen">
+
+</body>
+</html>

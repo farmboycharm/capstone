@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Sign In</title>
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css?family=Rajdhani" rel="stylesheet">
+  <!-- Import Main CSS -->
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <!-- Import Java Scripts: main jquery, plugins and materialize -->
+  <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+  <script type="text/javascript" src="js/plugins.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+
+  <!-- for carousel and button collapse feature -->
+  <script>
+    $(document).ready(function(){
+
+      
+    });
+  </script>  
+  
+</head>
+
+<body class="indigo lighten-2">
+
+  <div id="loader-wrapper">
+      <div id="loader"></div>        
+      <div class="loader-section section-left black"></div>
+      <div class="loader-section section-right black"></div>
+  </div>
+
+  <br>
+  <br>
+  <div id="login-page" class="row indigo lighten-1">
+    <div id="createcard" class="col s12 z-depth-4">
+      <form class="login-form">
+        <div class="row">
+          <div class="input-field col s12 center">
+            <a href="index.html"><img id="logo" src="css/logo.png" alt="" class="responsive-img valign hoverable"></a>
+            <h4 class="center">Log In</h4>
+          </div>
+        </div>
+        <div class="row margin">
+          <div class="input-field col s12">
+            <i class="material-icons prefix">face</i>
+            <input id="username" type="text">
+            <label for="username" class="center-align white-text">Username</label>
+          </div>
+        </div>
+        <div class="row margin">
+          <div class="input-field col s12">
+            <i class="material-icons prefix">lock_outline</i>
+            <input id="password" type="password">
+            <label for="password" class="center-align white-text">Password</label>
+          </div>
+        </div>
+        <div class="row">          
+          <div class="col s12 m12 l12 ">
+            <input type="checkbox" class="filled-in" id="filled-in-box">
+            <label for="filled-in-box" class="center-align white-text">Remember Me</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <a href="page-404.html" class="waves-effect waves-light btn indigo lighten-1">Log In</a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s6 m6 l6 ">
+
+              <p class="medium-small"><a href="index.html" class="white-text">Back to Home</a></p>
+          </div>
+          <div class="input-field col s6 m6 l6">
+              <p class="right medium-small"><a href="create.html" class="white-text">No account?</a></p>
+          </div>          
+        </div>
+
+      </form>
+    </div>
+  </div>
+
+</body>
+
+</html>
